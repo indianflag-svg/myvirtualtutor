@@ -1,0 +1,24 @@
+# Node modules
+node_modules/
+
+# Next.js build
+.next/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Temporary folders
+uploads/
+
+# Generated audio files
+public/*.mp3
+
+# MacOS system files
+.DS_Store
