@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Default light theme styles */
+body {
+  background-color: #ffffff;
+  color: #111111;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Custom colors (optional for accents) */
+:root {
+  --color-accent-blue: #3B82F6;
+  --color-mint: #22C55E;
+  --color-text-secondary: #6B7280;
+}
+
+@import './styles/animations.css';
+@import './styles/hero.css';
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* --- MVT polish --- */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: geometricPrecision;
+}
+
+::selection {
+  background: rgba(56, 189, 248, 0.25);
+}
+

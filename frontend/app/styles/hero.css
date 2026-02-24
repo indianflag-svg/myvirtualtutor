@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+  }
+
+  .float-animation {
+    animation: float 3s ease-in-out infinite;
+  }
+}
+
+@layer utilities {
+  @keyframes heroFloat {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-8px); }
+  }
+
+  .hero-float {
+    animation: heroFloat 6s ease-in-out infinite;
+  }
+}
+
+@layer utilities {
+  @keyframes heroBgMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  .hero-bg-animate {
+    background-size: 200% 200%;
+    animation: heroBgMove 30s linear infinite;
+  }
+}
+
+@layer utilities {
+  @keyframes animateBg {
+    0%, 100% { transform: translateY(0px) translateX(0px); }
+    50% { transform: translateY(-15px) translateX(15px); }
+  }
+  @keyframes animateBgReverse {
+    0%, 100% { transform: translateY(0px) translateX(0px); }
+    50% { transform: translateY(15px) translateX(-15px); }
+  }
+  .animate-animate-bg { animation: animateBg 25s ease-in-out infinite; }
+  .animate-animate-bg-reverse { animation: animateBgReverse 30s ease-in-out infinite; }
+
+  @keyframes bounceSlow {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+  }
+  .animate-bounce-slow { animation: bounceSlow 6s ease-in-out infinite; }
+}

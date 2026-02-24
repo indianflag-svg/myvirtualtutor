@@ -1,0 +1,21 @@
+node_modules
+.next
+.env.local
+.env
+.DS_Store
+# Vercel
+.vercel/
+
+# Next.js
+next-env.d.ts
+
+# Local / WIP
+prisma.config.ts.bak
+
+
+# future / experimental
+app/api/usage/
+lib/useUsageEnforcer.ts
+
+# local / generated
+tsconfig.json
